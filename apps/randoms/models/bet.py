@@ -29,7 +29,7 @@ class Bet(models.Model):
         max_length=200,
         choices=Games.choices
     )
-    amout: float = models.DecimalField(
+    amount: float = models.DecimalField(
         verbose_name='сумма',
         max_digits=11,
         decimal_places=2

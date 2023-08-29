@@ -1,9 +1,8 @@
 from django.contrib import admin
 
-from .models import Banner, Bet
+from randoms.models.banner import Banner
+from randoms.models.bet import Bet
 
-
-# Register your models here.
 
 class BannerAdmin(admin.ModelAdmin):
     list_display:list[str] = (

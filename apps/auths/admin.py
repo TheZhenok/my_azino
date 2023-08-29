@@ -1,13 +1,11 @@
 from django.contrib import admin
 
-from .models import (
-    MyUserManager,
+from auths.models.my_user import (
     MyUser,
-    ActivationCode,
-    BankCard,
-    Transaction,
-
+    Transaction
 )
+from auths.models.bank_card import BankCard
+
 
 @admin.register(MyUser)
 class MyUserAdmin(admin.ModelAdmin):
